@@ -5,7 +5,7 @@ title: "Castine's Homework Assignments"
 	<h1>{{ page.title }}</h1>
 	<ul class="assignments">
 
-	  {% for post in site.posts %}
-	    <li><span>{{ assignments.date | date_to_string }}</span> » <a href="{{ assignments.url }}" title="{{ assignments.title }}">{{ assignments.title }}</a></li>
+	  {% for assignment in site.assignments %}
+	  » <a href="{{ assignments.url }}" title="{{ assignments.title }}">{{ assignments.title }}</a></li>
 	  {% endfor %}
 	</ul>
