@@ -3,12 +3,7 @@
 display: block;
 
 }
-@font-face {
-    font-family: 'sourcesans_proextralight';
-    src: url('/css/sourcesans_proextralight') format('woff2'),
-         url('/css/sourcesans_proextralight') format('woff');
-    font-weight: normal;
-    font-style: normal;
+
 }
 
 p.sans {
