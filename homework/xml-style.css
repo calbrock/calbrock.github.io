@@ -1,0 +1,78 @@
+
+* {
+display: block;
+
+}
+
+lb {
+    line-height: 20px;
+}
+
+space[quantity="1"]{padding:10px;}
+
+[rendition~= "#center"]{
+    text-align: center;
+    }
+    
+[rendition= "#center #uppercase"] {
+    padding-top: 40%;
+    font-size: 100%;
+   
+}
+
+[rendition= "#red #expanded"]{
+    font-size:150%;
+    color:red;
+    text-transform:uppercase;
+}    
+[rendition~= "#uppercase" ]{
+    text-transform:uppercase;
+    font-size: small;
+}
+
+[rendition~="#xx-large"]{
+    text-align: center;
+     color: red;
+     font-size: 200%;
+     font-weight:100;
+
+    }
+    
+    
+ [rendition~="#x-large"]{
+    font-size: 150%;
+
+   }   
+[rendition="#red #x-large"]{
+    font-size: 150%;
+         color: red;
+
+   }
+[rendition~="#large"]{
+    font-size: 100%;
+    padding-top: 10%;
+    padding-bottom: 15%;
+   }
+   
+   
+[rendition~="#small"]{
+ font-size: 70%;
+   }   
+
+docImprint{
+    
+    padding-top:5%;
+}
+pubPlace{
+    font-size:120%;
+
+}
+
+[rendition= "#small"][when="1904"]{
+    font-size:100%;
+}
+
+    
+    
+
+    
