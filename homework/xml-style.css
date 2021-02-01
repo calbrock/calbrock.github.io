@@ -4,6 +4,12 @@ display: block;
 
 }
 
+@font-face {
+    font-family: 'sourcesans_proextralight';
+    src: url('/css/sourcesans_proextralight.woff2') format('woff2'),
+         url('/css/sourcesans_proextralight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
   
 lb {
@@ -37,7 +43,7 @@ space[quantity="1"]{padding:10px;}
      color: red;
      font-size: 200%;
      font-weight:100;
-
+      font-family:'sourcesans_proextralight';
     }
     
     
