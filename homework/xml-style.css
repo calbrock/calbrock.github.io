@@ -4,15 +4,15 @@ display: block;
 
 }
 @font-face {
-    font-family: 'source_sans_proextralight';
-    src: url('/css/source_sans_proextralight') format('woff2'),
-         url('/css/source_sans_proextralight') format('woff');
+    font-family: 'sourcesans_proextralight';
+    src: url('/css/sourcesans_proextralight') format('woff2'),
+         url('/css/sourcesans_proextralight') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 p.sans {
-    font-family:'source_sans_proextralight';
+    font-family:'sourcesans_proextralight';
     color:blue;
     
 lb {
