@@ -10,9 +10,9 @@ title: "Castine's Homework"
 		<a href="titlepage.xml"> titlepage.xml</a>
 
 	  {% for post in site.homework %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{/moby.xml }}" title="{{ moby.xml }}">{{moby.xml }}</a>
-		<span>{{ post.date | date_to_string }}</span> » <a href="{{/tartRecipe.xml }}" title="{{tartRecipe.xml }}">{{tartRecipe.xml }}</a>
-			    <span>{{ post.date | date_to_string }}</span> » <a href="{{/titlepage.xml }}" title="{{ titlepage.xml }}">{{ titlepage.xml }}</a></li>
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{/moby.xml}}" title="{{moby.xml }}">{{moby.xml}}</a>
+		<span>{{ post.date | date_to_string }}</span> » <a href="{{/tartRecipe.xml}}" title="{{tartRecipe.xml}}">{{tartRecipe.xml}}</a>
+		<span>{{ post.date | date_to_string }}</span> » <a href="{{/titlepage.xml}}" title="{{titlepage.xml}}">{{titlepage.xml}}</a></li>
 
 	  {% endfor %}
 	</ul>
