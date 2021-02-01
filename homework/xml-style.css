@@ -3,12 +3,6 @@
 display: block;
 
 }
-@font-face {
-    font-family: 'source_sans_proextralight';
-    src: url('https://calbrock.github.io/homework/titlepage.xml') format('woff2'),
-         url('https://calbrock.github.io/homework/titlepage.xml') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
 }
 
