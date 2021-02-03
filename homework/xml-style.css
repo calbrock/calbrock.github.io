@@ -1,7 +1,6 @@
 
 * {
 display: block;
-background color:#f2eecb;
 }
 
 @font-face {
@@ -15,6 +14,8 @@ background color:#f2eecb;
 
 lb {
     line-height: 20px;
+    background color:#f2eecb;
+
 }
 
 space[quantity="1"]{padding:10px;}
