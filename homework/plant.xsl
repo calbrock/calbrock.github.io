@@ -4,7 +4,7 @@
         <html>
             <head>
                 <title> My first transformation </title>
-                <link rel="stylesheet" type="test/css" href="https://github.com/calbrock/calbrock.github.io/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="https://github.com/calbrock/calbrock.github.io/blob/main/css/main.css"/>    
             </head>
             
             <body>
