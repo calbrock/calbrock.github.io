@@ -2,7 +2,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
     <xsl:strip-space elements="*"/>
     
-    <xsl:template match="CATALOG/PLANT">
+    <xsl:template match="CATALOG">
         <html>
             <head>
                 <title> My first transformation </title>
@@ -19,59 +19,81 @@
                         <sup>tm</sup>
                         !
                     </p>
-            </body>
-        </html>
-               
+           
                 <table border="1">
-                    <tr bgcolor="#9acd32">
+                    
                         
                         <tr>
-                            <xsl:apply-templates/>
+                            
                             <th>Name</th>
                             <th>Speieces</th>
                             <th>Climate Level</th>
                             <th>Light</th>
                             <th>Price</th>
                             <th>Avalability</th>
-                        </tr>
+                        </tr><xsl:apply-templates/>
                         
-                        <tr>
-                            
-                            <td><xsl:value-of select="COMMON"/></td>
-                            
-                            
-                            
-                            
-                            <td><xsl:value-of select="BOTANICAL"/>
-                            </td>
-                            
-                            
-                            
-                            <td><xsl:value-of select="ZONE"/></td>
-                            
-                            
-                            
-                            <td><xsl:value-of select="LIGHT"/></td>
-                            
-                            
-                            
-                            <td><xsl:value-of select="PRICE"/></td>
-                            
-                            
-                            
-                            <td><xsl:value-of select="AVAILABILITY"/></td>
-                            
-                            
-                        </tr>
+                    <tr>
+                        
+                        <td><xsl:value-of select="COMMON"/></td>
+                        
+                        
+                        
+                        
+                        <td><xsl:value-of select="BOTANICAL"/>
+                        </td>
+                        
+                        
+                        
+                        <td><xsl:value-of select="ZONE"/></td>
+                        
+                        
+                        
+                        <td><xsl:value-of select="LIGHT"/></td>
+                        
+                        
+                        
+                        <td><xsl:value-of select="PRICE"/></td>
+                        
+                        
+                        
+                        <td><xsl:value-of select="AVAILABILITY"/></td>
+                        
+                        
                     </tr>
                     
                     
                     
                 </table>
-            
-     
+            </body>
+        </html>
+        
     </xsl:template>
     
+    <xsl:template match="CATALOG/PLANT">
+        <tr><xsl:apply-templates/></tr>
+    </xsl:template>
     
+    <xsl:template match="CATALOG/PLANT/COMMON">
+        <td><xsl:apply-templates/></td></xsl:template>
+    
+    <xsl:template match="CATALOG/PLANT/BOTANICAL">
+        <td><xsl:apply-templates/></td></xsl:template>
+    
+    <xsl:template match="CATALOG/PLANT/ZONE">
+        <td><xsl:apply-templates/></td></xsl:template>
+    
+    <xsl:template match="CATALOG/PLANT/LIGHT">
+        <td><xsl:apply-templates/></td></xsl:template>
+    
+    <xsl:template match="CATALOG/PLANT/PRICE">
+        <td><xsl:apply-templates/></td></xsl:template>
+    
+    <xsl:template match="CATALOG/PLANT/AVAILABILITY">
+        <td><xsl:apply-templates/></td></xsl:template>
+    
+  
+   
 </xsl:stylesheet>
+
 
