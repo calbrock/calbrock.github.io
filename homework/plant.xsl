@@ -7,28 +7,33 @@
             <head>
                 <title> My first transformation </title>
                 <link rel="stylesheet" type="text/css" href="https://github.com/calbrock/calbrock.github.io/blob/main/css/main.css"/>
+                
             </head>
             
             <body>
-                <h1>Plant Catalog </h1>
-                <p> this is to look at plants and their availability 
-                    <sup>tm</sup>
-                    !
-                </p>
+            
                 <xsl:apply-templates/>
                 
-                
+                    
+                    <h1>Plant Catalog </h1>
+                    <p> this is to look at plants and their availability 
+                        <sup>tm</sup>
+                        !
+                    </p>
+            </body>
+        </html>
+               
                 <table border="1">
                     <tr bgcolor="#9acd32">
                         
                         <tr>
                             <xsl:apply-templates/>
-                            <th>COMMON</th>
-                            <th>BOTANICAL</th>
-                            <th>ZONE</th>
-                            <th>LIGHT</th>
-                            <th>PRICE</th>
-                            <th>AVAILABILITY</th>
+                            <th>Name</th>
+                            <th>Speieces</th>
+                            <th>Climate Level</th>
+                            <th>Light</th>
+                            <th>Price</th>
+                            <th>Avalability</th>
                         </tr>
                         
                         <tr>
@@ -64,8 +69,8 @@
                     
                     
                 </table>
-            </body>
-        </html>
+            
+     
     </xsl:template>
     
     <xsl:template match="COMMON"></xsl:template>
