@@ -13,8 +13,7 @@
             <body>
             
                 <xsl:apply-templates/>
-                
-                    
+               
                     <h1>Plant Catalog </h1>
                     <p> this is to look at plants and their availability 
                         <sup>tm</sup>
@@ -73,12 +72,6 @@
      
     </xsl:template>
     
-    <xsl:template match="COMMON"></xsl:template>
-    <xsl:template match="BOTANICAL"></xsl:template>
-    <xsl:template match="ZONE"></xsl:template>
-    <xsl:template match="LIGHT"></xsl:template>
-    <xsl:template match="PRICE"></xsl:template>
-    <xsl:template match="AVAILABILITY"></xsl:template>
     
 </xsl:stylesheet>
 
