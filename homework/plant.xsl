@@ -26,7 +26,7 @@
                         <tr>
                             
                             <th>Name</th>
-                            <th>Speieces</th>
+                            <th>Species</th>
                             <th>Climate Level</th>
                             <th>Light</th>
                             <th>Price</th>
