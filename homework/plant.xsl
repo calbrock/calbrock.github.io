@@ -11,14 +11,18 @@
             </head>
             
             <body>
-            
+                <h1>Plant Catalog </h1>
+                <p> 
+                    <sup>tm</sup>
+                    !
+                </p>
+                
+                <p>
+                    This catalog is to help provide care and avalability infomration to our users
+                </p>
                 <xsl:apply-templates/>
                
-                    <h1>Plant Catalog </h1>
-                    <p> this is to look at plants and their availability 
-                        <sup>tm</sup>
-                        !
-                    </p>
+                    
            
                 <table border="1">
                     
@@ -95,5 +99,4 @@
   
    
 </xsl:stylesheet>
-
 
