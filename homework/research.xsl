@@ -4,17 +4,65 @@
     <xsl:output indent="yes"/>
     <xsl:strip-space elements="*"/>
 
-    <xsl:template match="div[@class = 'interior-content']">
-
-        <xsl:result-document href="file:/Users/castine/Desktop/research-journal.xml">
+    <xsl:template match="div[@class = 'interior-content']/ul">
+        <xsl:result-document href="file:/Users/castine/Desktop/journal.xml">
+            
             <content>
                 <xsl:apply-templates select="li">
-                    <xsl:sort select="p[1]/span" order="descending"/>
+                    <xsl:sort select="p[1]/span/substring-after(., '-')" 
+                        order="ascending" data-type="text"/>
+                
                 </xsl:apply-templates>
             </content>
-        </xsl:result-document>
-
+            
+            </xsl:result-document>
     </xsl:template>
+        
+        
+        <xsl:template match="li">
+            <entry>
+            <xsl:apply-templates/>
+            </entry>
+        </xsl:template>
+                
+                <!-- url/title  -->
+    
+                <xsl:template match="li/p[1]/a">
+                    <url>
+                       <xsl:value-of select="@href"/>                        
+                    </url>
+                    
+                    
+                    <title>
+                        <xsl:apply-templates/>
+                        
+                    </title>
+                </xsl:template> 
+    
+    
+                
+                
+                
+    <!-- institution -->
+                <xsl:template 
+                    match="li/p/span"> 
+                    
+                    <institution>
+                        <xsl:value-of select="substring-after(., '-')"/>
+                    </institution> 
+                </xsl:template>
+                
+                
+                <!-- record -->
+                <xsl:template
+                    match="/html[1]/body[1]/form[1]/div[2]/main[1]/div[3]/div[1]/div[2]//li/p[2]">
+                    <record>
+                        <xsl:apply-templates/>
+                        
+                    </record>
+                </xsl:template>
+            
+       
 
 
     <!-- what I want ignored -->
@@ -36,23 +84,5 @@
     <xsl:template match="/html/body[1]/form[1]/div[2]/main[1]/script[1]/@type"/>
 
 
-    <!-- template -->
-
-    <!-- url  need to get website not text?-->
-    <xsl:template match="/html/body[1]/form[1]/div[2]/main[1]/div[3]/div[1]/div[2]/ul[1]/li[*]/p[1]/a[1]/@href"/>
-
-
-    <!-- title -->
-    <xsl:template match="/html/body[1]/form[1]/div[2]/main[1]/div[3]/div[1]/div[2]/ul[1]/li[*]/p[1]/a[1]"/>
-
-
-
-    <!-- institution -->
-    <xsl:template match="/html[1]/body[1]/form[1]/div[2]/main[1]/div[3]/div[1]/div[2]//li/p/span"/>
-
-
-
-    <!-- record - correct but not showing???-->
-    <xsl:template match="/html[1]/body[1]/form[1]/div[2]/main[1]/div[3]/div[1]/div[2]//li/p[2]"/>
 
 </xsl:stylesheet>
